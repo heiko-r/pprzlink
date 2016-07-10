@@ -2257,7 +2257,7 @@
     <field name="setpoint_z" type="float" unit="m D"/>
   </message>
 
-  <message name="HENRY_GNSS" id="255">
+  <!--<message name="HENRY_GNSS" id="255">
     <field name="last_imu_update" type="uint32"/>
     <field name="GPS_time" type="double"/>
     <field name="GPS_solution_valid" type="uint8"/>
@@ -2272,6 +2272,15 @@
     <field name="V_North" type="double"/>
     <field name="V_East" type="double"/>
     <field name="V_Down" type="double"/>
+  </message>-->
+  
+  <message name="CHIBIESC" id="255">
+    <description>
+      ChibiESC debugging telemetry data
+    </description>
+    <field name="mode"        type="int">Mode</field>
+    <field name="bat_volts"   type="float" unit="V">Input battery voltage</field>
+    <field name="rpm"         type="float" unit="rpm">Motor rotation speed</field>
   </message>
 
 </msg_class>
