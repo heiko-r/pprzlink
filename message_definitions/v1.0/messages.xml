@@ -2278,7 +2278,7 @@
     <description>
       ChibiESC debugging telemetry data
     </description>
-    <field name="mode"        type="int">Mode</field>
+    <field name="mode"        type="uint8">Mode</field>
     <field name="bat_volts"   type="float" unit="V">Input battery voltage</field>
     <field name="rpm"         type="float" unit="rpm">Motor rotation speed</field>
   </message>
